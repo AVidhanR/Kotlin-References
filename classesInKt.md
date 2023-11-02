@@ -1,4 +1,4 @@
-### Enum Classes:
+### Enum Classes :
 An `enum` class is used to represent a fixed set of related constants. It's a way to define a type that consists of a limited number of distinct values.
 
 **Syntax:**
@@ -26,7 +26,7 @@ In this example, we define an `enum` class `Color` with three constant values. W
 
 ----
 
-### Sealed Classes:
+### Sealed Classes :
 A `sealed` class is used to represent a restricted hierarchy of classes, where all subclasses are known. It's often used for modeling restricted states or types.
 
 **Syntax:**
@@ -60,7 +60,7 @@ In this example, we define a `sealed` class `Result` with two subclasses: `Succe
 
 -----
 
-### Data Classes:
+### Data Classes :
 A `data` class is used to represent data and typically contains data, not behavior. It generates useful functions like `equals()`, `hashCode()`, `toString()`, and `copy()` automatically.
 
 **Syntax:**
@@ -90,7 +90,8 @@ fun main() {
 }
 ```
 
-In this example, we define a `data` class `Person` with two properties. We can easily create, copy, and compare instances of `Person` thanks to the generated functions.
+In this example, we define a `data` class `Person` with two properties. 
+We can easily create, copy, and compare instances of `Person` thanks to the generated functions.
 
 ### KeyPoints:
 - `enum` classes are for defining a limited set of constant values.
