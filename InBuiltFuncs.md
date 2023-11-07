@@ -1,4 +1,4 @@
-## Kotlin In-Built Functions (Higher Orderfunctions)
+# Kotlin In-Built Functions (Higher Order functions)
 
 > In Kotlin, higher-order functions are functions that can take other functions as arguments or return functions as results. 
 Lambdas are anonymous functions that can be used as arguments for higher-order functions. 
