@@ -1,8 +1,10 @@
+## Kotlin In-Built Functions (Higher Orderfunctions)
+
 > In Kotlin, higher-order functions are functions that can take other functions as arguments or return functions as results. 
 Lambdas are anonymous functions that can be used as arguments for higher-order functions. 
 Here are some common higher-order functions in Kotlin, along with their syntax and examples:
 
-### forEach(): 
+## forEach()
 This function is used to iterate over a collection and perform an action on each element.
 
 Syntax:
@@ -18,7 +20,7 @@ val numbers = listOf(1, 2, 3, 4, 5)
 numbers.forEach { println(it) }
 ```
 
-### map(): 
+## map()
 It transforms each element of a collection and returns a new collection with the transformed values.
 
 Syntax:
@@ -34,7 +36,7 @@ val numbers = listOf(1, 2, 3, 4, 5)
 val squaredNumbers = numbers.map { it * it }
 ```
 
-### filter(): 
+## filter()
 It filters a collection based on a given condition and returns a new collection with the filtered elements.
 
 Syntax:
@@ -50,7 +52,7 @@ val numbers = listOf(1, 2, 3, 4, 5)
 val evenNumbers = numbers.filter { it % 2 == 0 }
 ```
 
-### groupBy(): 
+## groupBy() 
 It groups elements of a collection based on a key selector function and returns a map where keys are the results 
 of the key selector function and values are lists of elements with the same key.
 
@@ -69,7 +71,7 @@ val people = listOf(Person("Alice", 25), Person("Bob", 30), Person("Charlie", 25
 val groupedByAge = people.groupBy { it.age }
 ```
 
-### fold()
+## fold()
 It accumulates the elements of a collection starting with an initial value and applying a given operation to each element.
 
 Syntax:
@@ -85,7 +87,7 @@ val numbers = listOf(1, 2, 3, 4, 5)
 val sum = numbers.fold(0) { accumulator, number -> accumulator + number }
 ```
 
-### sortedBy() 
+## sortedBy() 
 It sorts a collection based on a specified key selector function.
 
 Syntax:
