@@ -1,2 +1,5 @@
 # Kotlin-References
-This repo contains few references on Kotlin
+This repo contains few references on Kotlin that we mostly use.
+
+[Classes in Kotlin](https://github.com/AVidhanR/Kotlin-References/blob/main/classesInKt.md)
+[All types of Lists in Kotlin](https://github.com/AVidhanR/Kotlin-References/blob/main/listsInKotlin.md)
