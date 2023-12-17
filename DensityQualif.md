@@ -1,4 +1,4 @@
-### List of density qualifiers on Android::
+### List of density qualifiers on Android :
 
 - mdpi - resources for medium-density screens (~160 dpi)
 - hdpi - resources for high-density screens (~240 dpi)
