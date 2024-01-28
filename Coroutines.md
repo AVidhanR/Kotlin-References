@@ -131,3 +131,5 @@
    ```
 
 These are just some basics of Kotlin coroutines. The coroutine library provides more advanced features and tools for handling concurrency and asynchronous tasks in a clean and efficient way. Keep in mind that this information is based on the state of Kotlin and its coroutine library as of my last update in January 2022, and there might be updates or changes after that.
+### Access the Kotlin Playground from here : 
+[`Kotlin Playground`](https://developer.android.com/training/kotlinplayground)
