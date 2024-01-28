@@ -129,7 +129,39 @@
        }
    }
    ```
-
+   
 These are just some basics of Kotlin coroutines. The coroutine library provides more advanced features and tools for handling concurrency and asynchronous tasks in a clean and efficient way. Keep in mind that this information is based on the state of Kotlin and its coroutine library as of my last update in January 2022, and there might be updates or changes after that.
+
+### Parallel Decomposition: 
+Parallel decomposition involves taking a problem and breaking it into smaller subtasks that can be solved in parallel. When the results of the subtasks are ready, you can combine them into a final result.
+- Consider the below example program where we use the `async()` and `await()` to achieve the parallel decomposition
+```kotlin
+import kotlinx.coroutines.*
+
+fun main() {
+    runBlocking {
+        println("Weather Report")
+        println(getWeatherReport())
+        println("Have a good day!")
+    }
+}
+
+suspend fun getWeatherReport() = coroutineScope {
+    val forecast = async { getForecast() }
+    val temperature = async { getTemperature() }
+    "${forecast.await()} ${temperature.await()}"
+}
+
+suspend fun getForecast(): String {
+    delay(1000)
+    return "Sunny"
+}
+
+suspend fun getTemperature(): String {
+    delay(1000)
+    return "30\u00b0C"
+}
+```
+
 ### Access the Kotlin Playground from here : 
 [`Kotlin Playground`](https://developer.android.com/training/kotlinplayground)
