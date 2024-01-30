@@ -164,11 +164,38 @@ suspend fun getTemperature(): String {
 ```
 ### Cancellation of coroutines:
 > A similar topic to exceptions is cancellation of coroutines. This scenario is typically user-driven when an event has caused the app to cancel work that it had previously started.
-- consider above example and observe the `getWeatherReport()` below
+- Consider above example and observe the `getWeatherReport()` below
 ```kotlin
+import kotlinx.coroutines.*
 
+fun main() {
+    runBlocking {
+        println("Weather forecast")
+        println(getWeatherReport())
+        println("Have a good day!")
+    }
+}
+
+suspend fun getWeatherReport() = coroutineScope {
+    val forecast = async { getForecast() }
+    val temperature = async { getTemperature() }
+
+    delay(200)
+    temperature.cancel() //This is known as the cancelation of coroutine
+
+    "${forecast.await()}"
+}
+
+suspend fun getForecast(): String {
+    delay(1000)
+    return "Sunny"
+}
+
+suspend fun getTemperature(): String {
+    delay(1000)
+    return "30\u00b0C"
+}
 ```
-
 
 ### Access the Kotlin Playground from here : 
 [`Kotlin Playground`](https://developer.android.com/training/kotlinplayground)
