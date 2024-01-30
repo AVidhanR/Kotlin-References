@@ -162,6 +162,13 @@ suspend fun getTemperature(): String {
     return "30\u00b0C"
 }
 ```
+### Cancellation of coroutines:
+> A similar topic to exceptions is cancellation of coroutines. This scenario is typically user-driven when an event has caused the app to cancel work that it had previously started.
+- consider above example and observe the `getWeatherReport()` below
+```kotlin
+
+```
+
 
 ### Access the Kotlin Playground from here : 
 [`Kotlin Playground`](https://developer.android.com/training/kotlinplayground)
