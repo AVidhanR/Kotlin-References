@@ -2,7 +2,7 @@
 
 > In Kotlin, higher-order functions are functions that can take other functions as arguments or return functions as results. 
 Lambdas are anonymous functions that can be used as arguments for higher-order functions. 
-Here are some common higher-order functions in Kotlin, along with their syntax and examples:
+Here are some common higher-order functions in Kotlin, along with their syntax and examples: 
 
 ## forEach()
 This function is used to iterate over a collection and perform an action on each element.
