@@ -101,6 +101,10 @@ Example:
 ```kotlin
 data class Person(val name: String, val age: Int)
 
-val people = listOf(Person("Alice", 25), Person("Bob", 30), Person("Charlie", 20))
-val sortedByName = people.sortedBy { it.name }
+val people = listOf(
+Person("Alice", 25), 
+Person("Bob", 30), 
+Person("Charlie", 20)
+)
+val sortedByName = { it.name }
 ```
